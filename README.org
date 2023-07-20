@@ -1,0 +1,60 @@
+** Single Channel Solenoid Driver
+
+#+attr_org: :width 500px
+[[file:./images/driver-v0.png]]
+
+A prototype single channel solenoid driver was developed for testing.
+
+It is contained in the ~driver-v0~ folder.
+
+We will have 3 manifolds with 8 of these in a row that need to be driven with 12V and signalled with a TTL line. All the manifolds will act in unison.
+
+ - https://www.theleeco.com/product/lhd-series-2-way-control-solenoid-valve/
+ - 3 boards, 8 channels each
+ - 8 TTL inputs + GND
+ - 8 12V outputs
+ - 12V input on barrel jack
+   - Plug:
+     - https://www.digikey.com/en/products/detail/globtek-inc/CRP11856F00/16515770
+     - Cable Assembly 2.1mm ID, 5.5mm OD Jack, Right Angle to Wire Leads Round 6.0' (1.83m)
+   - Jack:
+     - https://www.digikey.com/en/products/detail/cui-devices/PJ-063AH/2161208
+     - PJ-063AH Power Barrel Connector Jack 2.10mm ID (0.083"), 5.50mm OD (0.217") Through Hole, Right Angle
+ - LHDB1242115H
+ - Spike+hold voltage: 12, 7.2
+ - LOHM RATE** (Cv): 1500 Lohms (0.013)
+ - Power Consumption At Hold Voltage (mW): 310
+ - Response time: 10 ms Max
+
+|----+-----------+-----+----------------------+--------------------+---------------------------|
+|  # | Reference | Qty | Value                | PartNum            | Mfg                       |
+|----+-----------+-----+----------------------+--------------------+---------------------------|
+|  1 | C1        |   1 | 47uF                 | T491X476K035AT     | Kemet                     |
+|  2 | C3        |   1 | 10uF                 | CL32A106KLULNNE    | Samsung Electro-Mechanics |
+|  3 | C4        |   1 | 18nF                 | KGM21NR71H183KT    | KYOCERA AVX               |
+|  4 | C5        |   1 | 470pF                | C0805C471K5RAC7800 | Kemet                     |
+|  5 | D1        |   1 | LED                  | 150080RS75000      | Wurth                     |
+|  6 | D2        |   1 | PMEG10010ELRX        | PMEG10010ELRX      | Nexperia                  |
+|  7 | F1        |   1 | 0ZCF0125FF2C         | 0ZCF0125FF2C       | Bel Fuse                  |
+|  8 | J1, J2    |   2 | Screw_Terminal_01x02 | 282837-2           | TE                        |
+|  9 | J3        |   1 | Barrel_Jack          | PJ-063AH           | CUI                       |
+| 10 | R1        |   1 | 49R9                 | RC0805FR-0749K9L   | Yageo                     |
+| 11 | R2        |   1 | 191k                 | RC0805FR-07191KL   | Yageo                     |
+| 12 | R3        |   1 | 162k                 | RC0805FR-07162KL   | Yageo                     |
+| 13 | R4        |   1 | 4k7                  | RC0805JR-074K7L    | Yageo                     |
+| 14 | R5        |   1 | 4k7                  | RC0805FR-0749K9L   | Yageo                     |
+| 15 | U1        |   1 | DRV104PWP            | DRV104PWP          | TI                        |
+|----+-----------+-----+----------------------+--------------------+---------------------------|
+
+** Octal Channel Driver
+
+** Dual Channel Complementary Driver
+
+We will also have a pair of these valves that need to be driven by a single TTL
+line in opposition (if one is in state A the other should be in state B).
+ - LHDA1231415H
+ - https://www.theleeco.com/product/lhd-series-3-way-control-solenoid-valve/
+ - One TTL input  + GND
+ - Two 12V complementary outputs
+
+The solenoids should be driven with a high-side switch using a peak and hold circuit.
