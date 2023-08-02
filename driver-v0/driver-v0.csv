@@ -1,7 +1,7 @@
 "Reference","Value","Footprint","Datasheet","Mfg","PartNum","Sim.Device","Sim.Pins","Qty"
 "C1","47uF","Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder","","Kemet","T491X476K035AT","","","1"
 "C3","10uF","Capacitor_SMD:C_1210_3225Metric","~","Samsung Electro-Mechanics","CL32A106KLULNNE","","","1"
-"C4","18nF","Capacitor_SMD:C_0805_2012Metric","~","KYOCERA AVX","KGM21NR71H183KT","","","1"
+"C4","0.18uF","Capacitor_SMD:C_0805_2012Metric","~","KYOCERA AVX","08053C184KAT2A","","","1"
 "C5","470pF","Capacitor_SMD:C_0805_2012Metric","~","Kemet","C0805C471K5RAC7800","","","1"
 "D1","LED","LED_SMD:LED_0805_2012Metric","~","Wurth","150080RS75000","","","1"
 "D2","PMEG10010ELRX","Diode_SMD:Nexperia_CFP3_SOD-123W","~","Nexperia","PMEG10010ELRX","D","1=K 2=A","1"

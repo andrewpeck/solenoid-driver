@@ -31,7 +31,7 @@ We will have 3 manifolds with 8 of these in a row that need to be driven with 12
 |----+-----------+-----+----------------------+--------------------+---------------------------|
 |  1 | C1        |   1 | 47uF                 | T491X476K035AT     | Kemet                     |
 |  2 | C3        |   1 | 10uF                 | CL32A106KLULNNE    | Samsung Electro-Mechanics |
-|  3 | C4        |   1 | 18nF                 | KGM21NR71H183KT    | KYOCERA AVX               |
+|  3 | C4        |   1 | 0.18 uF              | 08053C184KAT2A     | KYOCERA AVX               |
 |  4 | C5        |   1 | 470pF                | C0805C471K5RAC7800 | Kemet                     |
 |  5 | D1        |   1 | LED                  | 150080RS75000      | Wurth                     |
 |  6 | D2        |   1 | PMEG10010ELRX        | PMEG10010ELRX      | Nexperia                  |
